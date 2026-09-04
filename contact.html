@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="Stephen" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header>
+        <h1>CONTACT US</h1>
+        <p>
+            <strong>Welcome to our contact page</strong>
+        </p>
+
+        <hr>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="games.html">Explore The Hub</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="#footer">Jump To Bottom</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!--This is my content-->
+        <h2>
+            Contact me
+        </h2>
+        <form action="https://formspree.io/f/xdeodzon" method="post" >
+           <p>
+            I'd really like to hear from you!
+           </p>
+                <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Jane" autocomplete="on" required 
+                    autofocus>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Joe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phone">Phone: 
+                    </label>
+                    <input type="tel" name="phone" id="phone" placeholder="09123456789" 
+                    required>
+                </p>
+                <p>
+                    <label for="emailaddress">Email Address: 
+                    </label>
+                    <input type="tel" name="emailaddress" id="emailaddress" placeholder="janejoe@gmail.com" 
+                    required>
+                    
+                </p>
+            <!--  <p>
+                <label for="favoritegame">Favorite Game:</label> 
+                <select 
+                        name="favoritegame"id="favoritegame"        multiple>
+                        <optgroup label="Online">
+                            <option value="freefire">Free Fire</option>
+                            <option value="callofduty"> Call Of Duty </option>
+                        </optgroup>
+                        <optgroup label="Offline">
+                            <option value="subwaysurf" selected>Subway Surfers</option>
+                            <option value="candycrush">Candy Crush</option>
+                            <option value="royalmatch">Royal Match</option>
+                        </optgroup>
+                        <option value="other">Other</option>     
+                    </select>             
+                </p> -->
+                <p>
+                    <label for="favoritegame">Favorite Game:</label>
+                    <input type="text" name="favoritegame" id="favoritegame" list="games-list">
+                    <datalist id="games-list">
+                        <option value="freefire"></option>
+                        <option value="callofduty"></option>
+                        <option value="Subwaysurfers"></option>
+                        <option value="minimilitia"></option>
+                        <option value="candycrush"></option>
+                        <option value="granny"></option>
+                        <option value="others"></option>
+                        
+                    </datalist>
+                </p>
+           </fieldset> 
+           <br>
+           <fieldset >
+                <legend>
+                   Which Devices Are you Using to play games
+                </legend>
+                <p>
+                    <input type="radio" name="games" id="smartphone" value="smartphone">
+                    <label for="smartphone">SmartPhone</label>
+                </p>
+                <p>
+                    <input type="radio" name="games" id="smartphone" value="laptop">
+                    <label for="laptop">Laptop</label>
+                </p>
+                <p>
+                    <input type="radio" name="games" id="desktop" value="desktop">
+                    <label for="desktop">Deskop</label>
+                </p>
+                <p>
+                    <input type="radio" name="games" id="vr" value="vr">
+                    <label for="vr">VR Goggles</label>
+                </p>
+                <p>
+                    <input type="radio" name="games" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+           </fieldset>
+           <fieldset>
+                <legend> Send Me A Message</legend>
+                <label for="message">Your Message</label>
+                <br>
+                <textarea name="message" id="messgae" cols="30" rows="10" placeholder="Write your message here"></textarea>
+           </fieldset>
+           <br>
+           <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
+           
+        </form>
+    </main>
+    <hr>
+        <footer id="footer">
+        <a href="#">Back to top</a>
+    </footer>
+    <hr>
+     &lt;&lt;&lt; &copy; Copyright  Stephen Gaming Hub &gt;&gt;&gt;
+    
+</body>
+</html>
